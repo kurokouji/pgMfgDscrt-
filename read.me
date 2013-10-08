@@ -1,0 +1,26 @@
+XEAD Driverは、以下のデータベースで動作させることが出来ます。
+Apache Derby
+PostgreSQL
+MySQL
+
+ＣＯＮＣＥＰＴＷＡＲＥ／生産管理をPostgreSQLを使用して動作させるための手順を紹介します。
+
+移行に使用したバージョン
+XEAD Driver 2013.09.28版
+ＣＯＮＣＥＰＴＷＡＲＥ／生産管理 更新日：2013/10/04
+PostgrSQL 9.3.0
+
+
+ＣＯＮＣＥＰＴＷＡＲＥ／生産管理であるMfgDscrt.xeafは、標準のApache Derbyで動作します。
+
+
+PostgreSQLで動作させるには、PostgreSQLサーバー上にデータベースを作成し、
+MfgDscrt.xeafのデータベース設定の接続情報を修正する必要があります。
+
+
+簡単に動作確認ができるように、データベース移行のためのInsert文を使用した
+SQLファイル、MfgDscrt.sqlを用意しました。
+
+
+データベースへの接続id、パスワードはご自身の環境に合わせて
+MfgDscrt.xeafのデータベース設定で変更してください。
